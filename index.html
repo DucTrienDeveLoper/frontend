@@ -16,7 +16,7 @@
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="index.html">Start Bootstrap</a>
+        <a class="navbar-brand ps-3" href="index.html">Dashboard</a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
                 class="fas fa-bars"></i></button>
@@ -60,6 +60,7 @@
                         <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
                             data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="hethang.html">Các sản phẩm gần hết</a>
                                 <a class="nav-link" href="doanhthu.html">Doanh thu</a>
                                 <a class="nav-link" href="danhsachsanpham.html">Danh sách sản phẩm</a>
                                 <a class="nav-link" href="danhsachkhachhang.html">Danh sách khách hàng</a>
@@ -94,7 +95,7 @@
                                     <p>200000</p>
                                 </div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="#">View Details</a>
+                                    <a class="small text-white stretched-link" href="billday.html">View Details</a>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                 </div>
                             </div>
@@ -112,7 +113,7 @@
                                     <p>40</p>
                                 </div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="#">View Details</a>
+                                    <a class="small text-white stretched-link" href="billdetail.html">View Details</a>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                 </div>
                             </div>
@@ -130,7 +131,7 @@
                                     <p>5.000.000 VND</p>
                                 </div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="#">View Details</a>
+                                    <a class="small text-white stretched-link" href="billthanhcong.html">View Details</a>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                 </div>
                             </div>
@@ -147,7 +148,7 @@
                                     <p>50</p>
                                 </div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="#">View Details</a>
+                                    <a class="small text-white stretched-link" href="billcanpheduyet.html">View Details</a>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                                 </div>
                             </div>
@@ -155,6 +156,45 @@
                         </div>
                         <!-- End Đơn hàng cần phê duyệt -->
                     </div>
+                    <div class="row"> 
+                        <!-- Start Hóa đơn trong ngày  -->
+                      <div class="col-xl-3 col-md-6">
+                          <div class="card bg-primary text-white mb-4">
+                              <div class="card-body" style="display: flex;margin-bottom: -25px;">
+                                  <p style="font-size: 15px;"> Doanh thu tháng</p>
+
+                              </div>
+                              <div style="text-align:right; margin-right: 30px;margin-bottom: -10px">
+                                  <p>5.000.000 VND</p>
+                              </div>
+                              <div class="card-footer d-flex align-items-center justify-content-between">
+                                  <a class="small text-white stretched-link" href="doanhthuthang.html">View Details</a>
+                                  <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- End Hóa đơn trong ngày -->
+                      <!-- Start Hóa đơn thành công trong ngày -->
+                      <div class="col-xl-3 col-md-6">
+
+                          <div class="card bg-warning text-white mb-4">
+                              <div class="card-body" style="display: flex;margin-bottom: -25px;">
+                                  <p style="font-size: 15px;"> Số lượng khách hàng</p>
+
+                              </div>
+                              <div style="text-align:right; margin-right: 30px;margin-bottom: -10px">
+                                  <p>40</p>
+                              </div>
+                              <div class="card-footer d-flex align-items-center justify-content-between">
+                                  <a class="small text-white stretched-link" href="khachhang.html">View Details</a>
+                                  <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- End Hóa đơn thành công trong ngày -->
+                      
+                      <!-- End Đơn hàng cần phê duyệt -->
+                  </div>
                     <!-- End Thống kê tổng số lượng-->
                     <div class="row">
                         <!-- Start top 3 sản phẩm bán nhiều nhất -->
@@ -240,7 +280,7 @@
                     </div>
                     <!-- End top 3 sản phẩm bán ít nhất -->
                     <!-- Start Danh sách hóa đơn cần phê duyệt -->
-                    <div class="card mb-4">
+                    <!-- <div class="card mb-4">
                         <div class="card-header">
                             <i class="fas fa-table me-1"></i>
                             Danh sách hóa đơn cần phê duyệt 
@@ -277,9 +317,10 @@
                                 </tbody>
                               </table>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- End danh sách hóa đơn cần phê duyệt -->
                 </div>
+                
             </main> 
             <!--Start Footer -->
             <footer class="py-4 bg-light mt-auto">
