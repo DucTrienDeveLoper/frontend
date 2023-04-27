@@ -31,9 +31,9 @@ require "../inc/header.php";
                             <tbody>
                               <tr>
                                 <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+                                <td>001</td>
+                                <td>5.000.000</td>
+                                <td>Đức Triển</td>
                                 <td>thành công</td>
                                 <td>
                                     <button style="width:80px;" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#sua">
@@ -48,9 +48,9 @@ require "../inc/header.php";
                               </tr>
                               <tr>
                                 <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
+                                <td>002</td>
+                                <td>Minh Tuấn</td>
+                                <td>300.000</td>
                                 <td>thất bại</td>
                                 <td>
                                     <button style="width:80px;" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#sua">
@@ -66,8 +66,10 @@ require "../inc/header.php";
                               </tr>
                               <tr>
                                 <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
+                                <td >003</td>
+                                <td>Đức Phát</td>
+                                <td>400.000</td>
+                                
                                 <td>thành công</td>
                                 <td>
                                     <button style="width:80px;" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#sua">

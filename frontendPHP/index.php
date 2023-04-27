@@ -102,26 +102,11 @@ require "../inc/header.php";
                       </div>
                       <!-- End Hóa đơn trong ngày -->
                       <!-- Start Hóa đơn thành công trong ngày -->
-                      <div class="col-xl-3 col-md-6">
-
-                          <div class="card bg-warning text-white mb-4">
-                              <div class="card-body" style="display: flex;margin-bottom: -25px;">
-                                  <p style="font-size: 15px;"> Số lượng khách hàng</p>
-
-                              </div>
-                              <div style="text-align:right; margin-right: 30px;margin-bottom: -10px">
-                                  <p>40</p>
-                              </div>
-                              <div class="card-footer d-flex align-items-center justify-content-between">
-                                  <a class="small text-white stretched-link" href="khachhang.php">View Details</a>
-                                  <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                              </div>
-                          </div>
-                      </div>
+                     
                       <!-- End Hóa đơn thành công trong ngày -->
                       
                       <!-- End Đơn hàng cần phê duyệt -->
-                  </div>
+                  
                     <!-- End Thống kê tổng số lượng-->
                     <div class="row">
                         <!-- Start top 3 sản phẩm bán nhiều nhất -->
