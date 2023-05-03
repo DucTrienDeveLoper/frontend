@@ -1,255 +1,714 @@
 <?php
 require "../inc/header.php";
 ?>
-        <div id="layoutSidenav_content"> 
-            
-            <main>
-                <div class="container-fluid px-4">
-                    <h1 class="mt-4">Dashboard</h1>
-                    <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item active">Dashboard</li>
-                    </ol>
-                    <!-- Start Thống kê tổng số lượng-->
-                    <div class="row"> 
-                          <!-- Start Hóa đơn trong ngày  -->
-                        <div class="col-xl-3 col-md-6">
-                            <div class="card bg-primary text-white mb-4">
-                                <div class="card-body" style="display: flex;margin-bottom: -25px;">
-                                    <p style="font-size: 15px;"> Hóa đơn trong ngày 15 tháng 9</p>
+<div id="layoutSidenav_content">
 
-                                </div>
-                                <div style="text-align:right; margin-right: 30px;margin-bottom: -10px">
-                                    <p>200000</p>
-                                </div>
-                                <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="billday.php">View Details</a>
-                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                </div>
-                            </div>
+    <main>
+        <div class="container-fluid px-4">
+            <h1 class="mt-4" style="font-size: 30px;">Dashboard</h1>
+            <ol class="breadcrumb mb-4" style="font-size: 14px; background: #f4f3f6;">
+                <li class="breadcrumb-item active">Dashboard</li>
+            </ol>
+            <!-- Start Thống kê tổng số lượng-->
+            <div class="row">
+                <!-- Start Hóa đơn trong ngày  -->
+                <div class="col-xl-3 col-md-6">
+                    <div class="card bg-primary text-white mb-4">
+                        <div class="card-body" style="display: flex;margin-bottom: -25px;">
+                            <p style="font-size: 15px;">Số Đơn Hàng cấn duyệt </p>
+
                         </div>
-                        <!-- End Hóa đơn trong ngày -->
-                        <!-- Start Hóa đơn thành công trong ngày -->
-                        <div class="col-xl-3 col-md-6">
-
-                            <div class="card bg-warning text-white mb-4">
-                                <div class="card-body" style="display: flex;margin-bottom: -25px;">
-                                    <p style="font-size: 15px;"> Số hóa đơn thành công ngày 15</p>
-
-                                </div>
-                                <div style="text-align:right; margin-right: 30px;margin-bottom: -10px">
-                                    <p>40</p>
-                                </div>
-                                <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="billdetail.php">View Details</a>
-                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                </div>
-                            </div>
+                        <div style="text-align:right; margin-right: 30px;margin-bottom: -10px">
+                            <p>200000</p>
                         </div>
-                        <!-- End Hóa đơn thành công trong ngày -->
-                        <!-- Start Tổng doanh thu trong ngày -->
-                        <div class="col-xl-3 col-md-6">
-
-                            <div class="card bg-success text-white mb-4">
-                                <div class="card-body" style="display: flex;margin-bottom: -25px;">
-                                    <p style="font-size: 15px;"> Tổng doanh thu trong ngày</p>
-
-                                </div>
-                                <div style="text-align:right; margin-right: 30px;margin-bottom: -10px">
-                                    <p>5.000.000 VND</p>
-                                </div>
-                                <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="billthanhcong.php">View Details</a>
-                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Tổng doanh thu trong ngày -->
-                        <!-- Start Đơn hàng cần phê duyệt -->
-                        <div class="col-xl-3 col-md-6">
-                            <div class="card bg-danger text-white mb-4">
-                                <div class="card-body" style="display: flex;margin-bottom: -25px;">
-                                    <p style="font-size: 15px;"> đơn hàng cần phê duyệt</p>
-
-                                </div>
-                                <div style="text-align:right; margin-right: 30px;margin-bottom: -10px">
-                                    <p>50</p>
-                                </div>
-                                <div class="card-footer d-flex align-items-center justify-content-between">
-                                    <a class="small text-white stretched-link" href="billcanpheduyet.php">View Details</a>
-                                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <!-- End Đơn hàng cần phê duyệt -->
-                    </div>
-                    <div class="row"> 
-                        <!-- Start Hóa đơn trong ngày  -->
-                      <div class="col-xl-3 col-md-6">
-                          <div class="card bg-primary text-white mb-4">
-                              <div class="card-body" style="display: flex;margin-bottom: -25px;">
-                                  <p style="font-size: 15px;"> Doanh thu tháng</p>
-
-                              </div>
-                              <div style="text-align:right; margin-right: 30px;margin-bottom: -10px">
-                                  <p>5.000.000 VND</p>
-                              </div>
-                              <div class="card-footer d-flex align-items-center justify-content-between">
-                                  <a class="small text-white stretched-link" href="doanhthuthang.php">View Details</a>
-                                  <div class="small text-white"><i class="fas fa-angle-right"></i></div>
-                              </div>
-                          </div>
-                      </div>
-                      <!-- End Hóa đơn trong ngày -->
-                      <!-- Start Hóa đơn thành công trong ngày -->
-                     
-                      <!-- End Hóa đơn thành công trong ngày -->
-                      
-                      <!-- End Đơn hàng cần phê duyệt -->
-                  
-                    <!-- End Thống kê tổng số lượng-->
-                    <div class="row">
-                        <!-- Start top 3 sản phẩm bán nhiều nhất -->
-                        <div class="col-xl-6">
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                    <i class="fas fa-chart-area me-1"></i>
-                                    Top 3 sản phẩm bán nhiều nhất
-                                </div>
-                                <div class="card-body">
-                                    <table class="table">
-                                        <thead>
-                                          <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">Tên sản phẩm</th>
-                                            <th scope="col">Giá sản phẩm</th>
-                                            <th scope="col">Số lượng</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                          <tr>
-                                            <th scope="row">1</th>
-                                            <td>Oppo Realme</td>
-                                            <td>600</td>
-                                            <td>50</td>
-                                          </tr>
-                                          <tr>
-                                            <th scope="row">2</th>
-                                            <td>Oppo 3</td>
-                                            <td>300</td>
-                                            <td>40</td>
-                                          </tr>
-                                          <tr>
-                                            <th scope="row">2</th>
-                                            <td>Samsung</td>
-                                            <td>300</td>
-                                            <td>40</td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Top 3 sản phẩm bán nhiều nhất  -->
-                        <!-- Start Top 3 sản phẩm bán ít nhất -->
-                        <div class="col-xl-6">
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                    <i class="fas fa-chart-bar me-1"></i>
-                                    Top 3 sản phẩm bán ít nhất
-                                </div>
-                                <div class="card-body"><table class="table">
-                                    <thead>
-                                      <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">Tên sản phẩm</th>
-                                        <th scope="col">Giá sản phẩm</th>
-                                        <th scope="col">Số lượng</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
-                                      </tr>
-                                    </tbody>
-                                  </table></div>
-                            </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="hoadon.php">View Details</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                         </div>
                     </div>
-                    <!-- End top 3 sản phẩm bán ít nhất -->
-                    <!-- Start Danh sách hóa đơn cần phê duyệt -->
-                    <!-- <div class="card mb-4">
+                </div>
+                <!-- End Hóa đơn trong ngày -->
+                <!-- Start Hóa đơn thành công trong ngày -->
+                <div class="col-xl-3 col-md-6">
+
+                    <div class="card bg-warning text-white mb-4">
+                        <div class="card-body" style="display: flex;margin-bottom: -25px;">
+                            <p style="font-size: 15px;"> Nhân Viên Trong Ca Trực</p>
+
+                        </div>
+                        <div style="text-align:right; margin-right: 30px;margin-bottom: -10px">
+                            <p>40</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="nhanvien.php">View Details</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Hóa đơn thành công trong ngày -->
+                <!-- Start Tổng doanh thu trong ngày -->
+                <div class="col-xl-3 col-md-6">
+
+                    <div class="card bg-success text-white mb-4">
+                        <div class="card-body" style="display: flex;margin-bottom: -25px;">
+                            <p style="font-size: 15px;">Tổng Doang Thu Hôm nay </span></p>
+
+                        </div>
+                        <div style="text-align:right; margin-right: 30px;margin-bottom: -10px">
+                            <p>5.000.000 VND</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="doanhthu.php">View Details</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Tổng doanh thu trong ngày -->
+                <!-- Start Đơn hàng cần phê duyệt -->
+                <div class="col-xl-3 col-md-6">
+                    <div class="card bg-danger text-white mb-4">
+                        <div class="card-body" style="display: flex;margin-bottom: -25px;">
+                            <p style="font-size: 15px;">Tổng Doanh Thu Tháng <span> 9</span></p>
+
+                        </div>
+                        <div style="text-align:right; margin-right: 30px;margin-bottom: -10px">
+                            <p>50</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="doanhthu.php">View Details</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End Đơn hàng cần phê duyệt -->
+            </div>
+            <!-- Start Hóa đơn trong ngày  -->
+
+            <!-- End Hóa đơn trong ngày -->
+            <!-- Start Hóa đơn thành công trong ngày -->
+
+            <!-- End Hóa đơn thành công trong ngày -->
+
+            <!-- End Đơn hàng cần phê duyệt -->
+
+            <!-- End Thống kê tổng số lượng-->
+            <div class="row">
+                <!-- Start top 3 sản phẩm bán nhiều nhất -->
+                <div class="col-xl-6">
+                    <div class="card mb-12">
                         <div class="card-header">
-                            <i class="fas fa-table me-1"></i>
-                            Danh sách hóa đơn cần phê duyệt 
+                            <i class="fas fa-chart-area me-1"></i>
+                            Danh sánh mặt hàng sắp hết
                         </div>
                         <div class="card-body">
-                            <table class="table">
+                            <table id="example" class="display table table-hover" style="width:120%">
                                 <thead>
-                                  <tr style="background: aquamarine;">
-                                    <th scope="col">#</th>
-                                    <th scope="col">Tên khách hàng</th>
-                                    <th scope="col">Số hóa đơn</th>
-                                    <th scope="col">Tổng tiền</th>
-                                  </tr>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Tên Điện Thoại</th>
+                                        <th>SL</th>
+                                        <th>Giá </th>
+                                        <th>Trạng Thái</th>
+
+                                    </tr>
                                 </thead>
                                 <tbody>
-                                  <tr>
-                                    <th scope="row">1</th>
-                                    <td>Oppo Realme</td>
-                                    <td>600</td>
-                                    <td>50</td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">2</th>
-                                    <td>Oppo 3</td>
-                                    <td>300</td>
-                                    <td>40</td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">2</th>
-                                    <td>Samsung</td>
-                                    <td>300</td>
-                                    <td>40</td>
-                                  </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Sam Sum</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+                                        <td class="status-color">Sắp hết </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Sam Sum 2</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+                                        <td class="status-color">Sắp hết </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Sam Sum 2</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+                                        <td class="status-color">Sắp hết </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Sam Sum 3</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+                                        <td class="status-color">Sắp hết </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+                                        <td class="status-color">Sắp hết </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+                                        <td class="status-color">Sắp hết </td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+                                        <td class="status-color">Sắp hết </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+                                        <td class="status-color">Sắp hết </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+                                        <td class="status-color">Sắp hết </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+                                        <td class="status-color">Sắp hết </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+                                        <td class="status-color">Sắp hết </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+                                        <td class="status-color">Sắp hết </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+                                        <td class="status-color">Sắp hết </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+                                        <td class="status-color">Sắp hết </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+                                        <td class="status-color">Sắp hết </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+                                        <td class="status-color">Sắp hết </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+                                        <td class="status-color">Sắp hết </td>
+                                    </tr>
                                 </tbody>
-                              </table>
+                            </table>
                         </div>
-                    </div> -->
-                    <!-- End danh sách hóa đơn cần phê duyệt -->
+                    </div>
                 </div>
-                
-            </main> 
-            <!--Start Footer -->
-            <?php
+                <!-- End Top 3 sản phẩm bán nhiều nhất  -->
+                <!-- Start Top 3 sản phẩm bán ít nhất -->
+                <div class="col-xl-6">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <i class="fas fa-chart-bar me-1"></i>
+                            Danh Sách Sản Phẩm Bán nhiều nhất
+                        </div>
+                        <div class="card-body">
+                            <table id="examp" class="display table table-hover" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Tên Điện Thoại</th>
+                                        <th>SL</th>
+                                        <th>Giá </th>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Sam Sum</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Sam Sum 2</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Sam Sum 2</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Sam Sum 3</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Sam Sum 5</td>
+                                        <td>5</td>
+                                        <td>50000 <span>VND</span></td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card mb-12" >
+                        <div class="card-header">
+                            <i class="fas fa-chart-area me-1"></i>
+                            Danh sánh hóa đơn cân phê duyệt
+                        </div>
+                        <div class="card-body">
+                            <table id="exam" class="display table table-hover" style="width:120%">
+                                <thead>
+                                    <tr>
+                                        <th>STT</th>
+                                        <th>Mã Hóa Đơn</th>
+                                        <th>Khuyến Mãi
+                                        <th>
+                                        <th>Tên khách hàng</th>
+                                        <th>Tên Điện Thoại</th>
+                                        <th>SL</th>
+                                        <th>Giá </th>
+                                        <th>Trạng Thái</th>
+
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>01</td>
+                                    <td>HD01</td>
+                                    <td>33%
+                                    <td>
+                                    <td>Nguyễn Văn Mạnh</td>
+                                    <td>Phone sam sumu</td>
+
+                                    <td>1</td>
+                                    <td>50000 <span>VNĐ</span> </td>
+                                    <!-- truyền mã hóa đơn trong  data-bs-target="mã hóa đơn" và truyền thêm mã Khóa đơn dòng 516 id= mã hóa đơn -->
+                                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#HD01">duyệt</button></td>
+                                </tr>
+                                <tr>
+                                    <td>01</td>
+                                    <td>HD01</td>
+                                    <td>33%
+                                    <td>
+                                    <td>Nguyễn Văn Mạnh</td>
+                                    <td>Phone sam sumu</td>
+
+                                    <td>1</td>
+                                    <td>50000 <span>VNĐ</span> </td>
+                                    <td><button type="button" class="btn btn-primary">duyệt</button></td>
+                                </tr>
+                                <tr>
+                                    <td>01</td>
+                                    <td>HD01</td>
+                                    <td>33%
+                                    <td>
+                                    <td>Nguyễn Văn Mạnh</td>
+                                    <td>Phone sam sumu</td>
+
+                                    <td>1</td>
+                                    <td>50000 <span>VNĐ</span> </td>
+                                    <td><button type="button" class="btn btn-primary">duyệt</button></td>
+                                </tr>
+                                <tr>
+                                    <td>01</td>
+                                    <td>HD01</td>
+                                    <td>33%
+                                    <td>
+                                    <td>Nguyễn Văn Mạnh</td>
+                                    <td>Phone sam sumu</td>
+
+                                    <td>1</td>
+                                    <td>50000 <span>VNĐ</span> </td>
+                                    <td><button type="button" class="btn btn-primary">duyệt</button></td>
+                                </tr>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="card " style="margin-top:20px">
+                        <div class="card-header">
+                            Biểu Đồ Tổng Doanh Thu Trong Ngày
+                        </div>
+                        <div class="card-body">
+                        <div id="chartContainer333" style="height: 370px; width: 100%;"></div>
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                <div class="card " style="margin-top:20px">
+                        <div class="card-header">
+                            Biểu Đồ Tổng Doanh Thu Trong Tháng
+                        </div>
+                        <div class="card-body">
+                       <div id="resizable" style="height: 370px;border:1px solid gray;">
+	        <div id="chartContainer1" style="height: 100%; width: 100%;"></div>
+           </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" id="HD01" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Hóa đơn cần duyệt</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p style="font-size:16px">Trạng Thái Hóa Đơn: </p>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected value="1">Duyệt</option>
+                            <option value="2">Đang Chờ Duyệt</option>
+                            <option value="3">Hủy</option>
+                        </select>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">duyệt</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!--Start Footer -->
+    <?php
             require "../inc/footer.php";
             ?>
-            <!-- End footer -->
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-    <script src="assets/demo/chart-area-demo.js"></script>
-    <script src="assets/demo/chart-bar-demo.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
-        crossorigin="anonymous"></script>
-    <script src="js/datatables-simple-demo.js"></script>
+    <!-- End footer -->
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+<script src="https://canvasjs.com/assets/script/jquery-ui.1.11.2.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var table = $('#example').DataTable({
+            scrollX: true,
+            "lengthChange": false,
+            "pagingType": "full_numbers",
+            "lengthMenu": [10, 15, 20, 25],
+            "infoEmpty": "No entries to show",
+            "info": false,
+            "infoFiltered": " - filtered from _MAX_ records",
+            searchPanes: {
+                viewTotal: false
+            },
+            "search": {
+                "label": "Fred"
+            },
+            dom: 'Plfrtip',
+            language: {
+                "search": "Tìm Kiếm:",
+                "zeroRecords": "Không có Dữ Liệu",
+                "emptyTable": "Không có sản phẩm nào sắp hết",
+                paginate: {
+                    previous: '<',
+                    next: '>',
+                    "first": "<<",
+                    "last": ">>",
+                    "search": "Tìm kiếm"
+
+                }
+            }
+        });
+
+        var table = $('#examp').DataTable({
+            scrollX: true,
+            "lengthChange": false,
+            "pagingType": "full_numbers",
+            "lengthMenu": [10, 15, 20, 25],
+            "loadingRecords": "Loading...",
+            "infoEmpty": "No entries to show",
+            "info": false,
+            "infoFiltered": " - filtered from _MAX_ records",
+            searchPanes: {
+                viewTotal: false
+            },
+            "search": {
+
+            },
+            dom: 'Plfrtip',
+            language: {
+                "search": "Tìm Kiếm:",
+                "emptyTable": "Không có những sản phẩn nào bán nhiều nhất",
+                "zeroRecords": "Không có Dữ Liệu",
+                paginate: {
+                    previous: '<',
+                    next: '>',
+                    "loadingRecords": "Loading...",
+                    "first": "<<",
+                    "last": ">>",
+                    "emptyTable": "Không có dữ liệu trong table",
+                    "search": "Tìm kiếm"
+
+                }
+            }
+        });
+        var table = $('#exam').DataTable({
+            scrollX: true,
+            "lengthChange": false,
+            "pagingType": "full_numbers",
+            "lengthMenu": [10, 15, 20, 25],
+            "loadingRecords": "Loading...",
+            "infoEmpty": "No entries to show",
+            "info": false,
+            "infoFiltered": " - filtered from _MAX_ records",
+            searchPanes: {
+                viewTotal: false
+            },
+            "search": {
+
+            },
+            dom: 'Plfrtip',
+            language: {
+                "search": "Tìm Kiếm:",
+                "zeroRecords": "Không có Dữ Liệu",
+                "emptyTable": "Không có hóa đơn nào cần phê duyệt",
+                paginate: {
+                    previous: '<',
+                    next: '>',
+                    "loadingRecords": "Loading...",
+                    "first": "<<",
+                    "last": ">>",
+                    "emptyTable": "Không có dữ liệu trong table",
+                    "search": "Tìm kiếm"
+
+                }
+            }
+        });
+    });</script>
+
+<script>
+    window.onload = function () {
+        // doanh thu theo ngay
+        var limit = 31;    //increase number of dataPoints by increasing the limit
+        var y = 100;
+        var data = [];
+        var dataSeries = { type: "line" };
+        var dataPoints = [];
+        for (var i = 0; i < limit; i += 1) {
+            y += Math.round(Math.random() * 10 - 5);
+            dataPoints.push({
+                x: i,
+                y: y
+            });
+        }
+        dataSeries.dataPoints = dataPoints;
+        data.push(dataSeries);
+
+        //Better to construct options first and then pass it as a parameter
+        var options = {
+            zoomEnabled: false,
+            animationEnabled: false,
+
+            data: data  // random data
+        };
+
+        $("#chartContainer333").CanvasJSChart(options);
+
+        // doanh thu theo tháng
+
+        var options1 = {
+	animationEnabled: true,
+	
+	data: [{
+		type: "column", //change it to line, area, bar, pie, etc
+	
+		showInLegend: true,
+		dataPoints: [
+			{x:1, y: 10 },
+			{x:2, y: 6 },
+			{x:3, y: 14 },
+			{x:4, y: 12 },
+			{x:5, y: 19 },
+			{x:6, y: 14 },
+			{x:7, y: 26 },
+			{x:8, y: 10 },
+			{x:9, y: 22 },
+            {x:10, y: 22 },
+            {x:11, y: 22 }, 
+            {x:12, y: 22 },
+            
+			]
+		}]
+};
+
+$("#resizable").resizable({
+	create: function (event, ui) {
+		//Create chart.
+		$("#chartContainer1").CanvasJSChart(options1);
+	},
+	resize: function (event, ui) {
+		//Update chart size according to its container size.
+		$("#chartContainer1").CanvasJSChart().render();
+	}
+});
+
+    }
+</script>
+
+ <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+
 </body>
 
 </html>

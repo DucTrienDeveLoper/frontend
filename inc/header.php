@@ -8,15 +8,21 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Dashboard - SB Admin</title>
-    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
-    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+     <link href="css/styles.css" rel="stylesheet" />
+     <link href ="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"/>
+     <link href =" https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css"/>
+     <link hret ="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css"/>
+     <link href="https://canvasjs.com/assets/css/jquery-ui.1.11.2.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     <link href ="css/index.css"  rel="stylesheet" />
+     <link href ="css/editor.css" rel="stylesheet" />
+
 </head>
 
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="index.php">Dashboard</a>
+        <a class="navbar-brand ps-3"  href="index.php">ShopPhone</a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
                 class="fas fa-bars"></i></button>
@@ -45,32 +51,27 @@
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
-                        <div class="sb-sidenav-menu-heading">Core</div>
+                        <div class="sb-sidenav-menu-heading">Quản Trị</div>
                         <a class="nav-link" href="index.php">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Dashboard
                         </a>
-                        <div class="sb-sidenav-menu-heading">Interface</div>
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
-                            data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                            Layouts
-                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                        </a>
-                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
+                        <div class="sb-sidenav-menu-heading">Quản Lý</div>
+                       
+                        <div  aria-labelledby="headingOne"
                             data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="hethang.php">Các sản phẩm gần hết</a>
-                                <a class="nav-link" href="doanhthu.php">Doanh thu</a>
-                                <a class="nav-link" href="danhsachsanpham.php">Danh sách sản phẩm</a>
-                                <a class="nav-link" href="danhsachkhachhang.php">Danh sách khách hàng</a>
+                            <nav>
+                                <a class="nav-link" href="loaisanpham.php">Loai Sản Phẩm</a>
+                                <a class="nav-link" href="sanpham.php">Sản Phẩm</a>
+                                <a class="nav-link" href="nhanvien.php">Nhân Viên</a>
+                                <a class="nav-link" href="hoadon.php">Hóa đơn</a>
+                                <a class="nav-link" href="khachhang.php">Khách Hàng</a>
+                                <a class="nav-link" href="doanhthu.php">Doanh Thu</a>
+                                <a class="nav-link" href="taikhoan.php">Tài Khoản</a>
                             </nav>
                         </div>
                     </div>
                 </div>
-                <div class="sb-sidenav-footer">
-                    <div class="small">Logged in as:</div>
-                    Start Bootstrap
-                </div>
+              
             </nav>
         </div>
