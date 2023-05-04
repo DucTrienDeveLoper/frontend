@@ -24,7 +24,7 @@ require "../inc/header.php";
                         <tr>
                             <th>STT</th>
                             <th>Tên sản Phẩm</th>
-                            <th>khuyến mãi</th>
+                            <th>Loại sản Phẩm</th>
                             <th>Giá</th>
                             <th>Số Lượng</th>
                             <th>Trạng Thái</th>
@@ -116,7 +116,7 @@ require "../inc/header.php";
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label">Khuyến Mãi</label>
+                                            <label for="exampleFormControlInput1" class="form-label">Loại Sản Phẩm</label>
                                             <input type="number" class="form-control" id="exampleFormControlInput1">
                                         </div>
                                     </div>
@@ -176,7 +176,7 @@ require "../inc/header.php";
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label">Khuyến Mãi</label>
+                                            <label for="exampleFormControlInput1" class="form-label">Loại Sản Phẩm</label>
                                             <input type="number" class="form-control" id="exampleFormControlInput1">
                                         </div>
                                     </div>

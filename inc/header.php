@@ -68,6 +68,9 @@
                                 <a class="nav-link" href="khachhang.php">Khách Hàng</a>
                                 <a class="nav-link" href="doanhthu.php">Doanh Thu</a>
                                 <a class="nav-link" href="taikhoan.php">Tài Khoản</a>
+                                <a class="nav-link" href="top5.php">Top 5 san pham</a>
+                                <a class="nav-link" href="danhsanhhethan.php">Danh sách sản phẩm hết hạn</a>
+                                <a class="nav-link" href="tọpitnhat.php">Top 5 ít nhất</a>
                             </nav>
                         </div>
                     </div>

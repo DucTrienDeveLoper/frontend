@@ -13,16 +13,31 @@ require "../inc/header.php";
             <div class="row">
                 <!-- Start Hóa đơn trong ngày  -->
                 <div class="col-xl-3 col-md-6">
-                    <div class="card bg-primary text-white mb-4">
+                    <div class="card bg-warning text-white mb-4">
                         <div class="card-body" style="display: flex;margin-bottom: -25px;">
-                            <p style="font-size: 15px;">Số Đơn Hàng cấn duyệt </p>
+                            <p style="font-size: 15px;">Số Đơn Hàng cần duyệt </p>
 
                         </div>
                         <div style="text-align:right; margin-right: 30px;margin-bottom: -10px">
                             <p>200000</p>
                         </div>
                         <div class="card-footer d-flex align-items-center justify-content-between">
-                            <a class="small text-white stretched-link" href="hoadon.php">View Details</a>
+                            <a class="small text-white stretched-link" href="hoadon.php">Chi tiết</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="card bg-warning text-white mb-4">
+                        <div class="card-body" style="display: flex;margin-bottom: -25px;">
+                            <p style="font-size: 15px;">Số Đơn Hàng Trong Ngày</p>
+
+                        </div>
+                        <div style="text-align:right; margin-right: 30px;margin-bottom: -10px">
+                            <p>200000</p>
+                        </div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="hoadontrongngay.php">Chi tiết</a>
                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                         </div>
                     </div>
@@ -40,7 +55,7 @@ require "../inc/header.php";
                             <p>40</p>
                         </div>
                         <div class="card-footer d-flex align-items-center justify-content-between">
-                            <a class="small text-white stretched-link" href="nhanvien.php">View Details</a>
+                            <a class="small text-white stretched-link" href="nhanvien.php">Chi tiết</a>
                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                         </div>
                     </div>
@@ -49,16 +64,16 @@ require "../inc/header.php";
                 <!-- Start Tổng doanh thu trong ngày -->
                 <div class="col-xl-3 col-md-6">
 
-                    <div class="card bg-success text-white mb-4">
+                    <div class="card bg-warning text-white mb-4">
                         <div class="card-body" style="display: flex;margin-bottom: -25px;">
-                            <p style="font-size: 15px;">Tổng Doang Thu Hôm nay </span></p>
+                            <p style="font-size: 15px;">Tổng Doanh Thu Hôm nay </span></p>
 
                         </div>
                         <div style="text-align:right; margin-right: 30px;margin-bottom: -10px">
                             <p>5.000.000 VND</p>
                         </div>
                         <div class="card-footer d-flex align-items-center justify-content-between">
-                            <a class="small text-white stretched-link" href="doanhthu.php">View Details</a>
+                            <a class="small text-white stretched-link" href="doanhthu.php">Chi tiết</a>
                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                         </div>
                     </div>
@@ -66,7 +81,7 @@ require "../inc/header.php";
                 <!-- End Tổng doanh thu trong ngày -->
                 <!-- Start Đơn hàng cần phê duyệt -->
                 <div class="col-xl-3 col-md-6">
-                    <div class="card bg-danger text-white mb-4">
+                    <div class="card bg-warning text-white mb-4">
                         <div class="card-body" style="display: flex;margin-bottom: -25px;">
                             <p style="font-size: 15px;">Tổng Doanh Thu Tháng <span> 9</span></p>
 
@@ -75,7 +90,7 @@ require "../inc/header.php";
                             <p>50</p>
                         </div>
                         <div class="card-footer d-flex align-items-center justify-content-between">
-                            <a class="small text-white stretched-link" href="doanhthu.php">View Details</a>
+                            <a class="small text-white stretched-link" href="doanhthu.php">Chi tiết</a>
                             <div class="small text-white"><i class="fas fa-angle-right"></i></div>
                         </div>
                     </div>
@@ -93,386 +108,7 @@ require "../inc/header.php";
             <!-- End Đơn hàng cần phê duyệt -->
 
             <!-- End Thống kê tổng số lượng-->
-            <div class="row">
-                <!-- Start top 3 sản phẩm bán nhiều nhất -->
-                <div class="col-xl-6">
-                    <div class="card mb-12">
-                        <div class="card-header">
-                            <i class="fas fa-chart-area me-1"></i>
-                            Danh sánh mặt hàng sắp hết
-                        </div>
-                        <div class="card-body">
-                            <table id="example" class="display table table-hover" style="width:120%">
-                                <thead>
-                                    <tr>
-                                        <th>STT</th>
-                                        <th>Tên Điện Thoại</th>
-                                        <th>SL</th>
-                                        <th>Giá </th>
-                                        <th>Trạng Thái</th>
-
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Sam Sum</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-                                        <td class="status-color">Sắp hết </td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Sam Sum 2</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-                                        <td class="status-color">Sắp hết </td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Sam Sum 2</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-                                        <td class="status-color">Sắp hết </td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Sam Sum 3</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-                                        <td class="status-color">Sắp hết </td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-                                        <td class="status-color">Sắp hết </td>
-                                    </tr>
-                                    <tr>
-                                        <td>6</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-                                        <td class="status-color">Sắp hết </td>
-                                    </tr>
-                                    <tr>
-                                        <td>7</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-                                        <td class="status-color">Sắp hết </td>
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-                                        <td class="status-color">Sắp hết </td>
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-                                        <td class="status-color">Sắp hết </td>
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-                                        <td class="status-color">Sắp hết </td>
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-                                        <td class="status-color">Sắp hết </td>
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-                                        <td class="status-color">Sắp hết </td>
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-                                        <td class="status-color">Sắp hết </td>
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-                                        <td class="status-color">Sắp hết </td>
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-                                        <td class="status-color">Sắp hết </td>
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-                                        <td class="status-color">Sắp hết </td>
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-                                        <td class="status-color">Sắp hết </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Top 3 sản phẩm bán nhiều nhất  -->
-                <!-- Start Top 3 sản phẩm bán ít nhất -->
-                <div class="col-xl-6">
-                    <div class="card mb-4">
-                        <div class="card-header">
-                            <i class="fas fa-chart-bar me-1"></i>
-                            Danh Sách Sản Phẩm Bán nhiều nhất
-                        </div>
-                        <div class="card-body">
-                            <table id="examp" class="display table table-hover" style="width:100%">
-                                <thead>
-                                    <tr>
-                                        <th>STT</th>
-                                        <th>Tên Điện Thoại</th>
-                                        <th>SL</th>
-                                        <th>Giá </th>
-
-
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Sam Sum</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-
-
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Sam Sum 2</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-
-
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Sam Sum 2</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-
-
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>Sam Sum 3</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>6</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>7</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Sam Sum 5</td>
-                                        <td>5</td>
-                                        <td>50000 <span>VND</span></td>
-
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="card mb-12" >
-                        <div class="card-header">
-                            <i class="fas fa-chart-area me-1"></i>
-                            Danh sánh hóa đơn cân phê duyệt
-                        </div>
-                        <div class="card-body">
-                            <table id="exam" class="display table table-hover" style="width:120%">
-                                <thead>
-                                    <tr>
-                                        <th>STT</th>
-                                        <th>Mã Hóa Đơn</th>
-                                        <th>Khuyến Mãi
-                                        <th>
-                                        <th>Tên khách hàng</th>
-                                        <th>Tên Điện Thoại</th>
-                                        <th>SL</th>
-                                        <th>Giá </th>
-                                        <th>Trạng Thái</th>
-
-                                    </tr>
-                                </thead>
-                                <tr>
-                                    <td>01</td>
-                                    <td>HD01</td>
-                                    <td>33%
-                                    <td>
-                                    <td>Nguyễn Văn Mạnh</td>
-                                    <td>Phone sam sumu</td>
-
-                                    <td>1</td>
-                                    <td>50000 <span>VNĐ</span> </td>
-                                    <!-- truyền mã hóa đơn trong  data-bs-target="mã hóa đơn" và truyền thêm mã Khóa đơn dòng 516 id= mã hóa đơn -->
-                                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#HD01">duyệt</button></td>
-                                </tr>
-                                <tr>
-                                    <td>01</td>
-                                    <td>HD01</td>
-                                    <td>33%
-                                    <td>
-                                    <td>Nguyễn Văn Mạnh</td>
-                                    <td>Phone sam sumu</td>
-
-                                    <td>1</td>
-                                    <td>50000 <span>VNĐ</span> </td>
-                                    <td><button type="button" class="btn btn-primary">duyệt</button></td>
-                                </tr>
-                                <tr>
-                                    <td>01</td>
-                                    <td>HD01</td>
-                                    <td>33%
-                                    <td>
-                                    <td>Nguyễn Văn Mạnh</td>
-                                    <td>Phone sam sumu</td>
-
-                                    <td>1</td>
-                                    <td>50000 <span>VNĐ</span> </td>
-                                    <td><button type="button" class="btn btn-primary">duyệt</button></td>
-                                </tr>
-                                <tr>
-                                    <td>01</td>
-                                    <td>HD01</td>
-                                    <td>33%
-                                    <td>
-                                    <td>Nguyễn Văn Mạnh</td>
-                                    <td>Phone sam sumu</td>
-
-                                    <td>1</td>
-                                    <td>50000 <span>VNĐ</span> </td>
-                                    <td><button type="button" class="btn btn-primary">duyệt</button></td>
-                                </tr>
-                                <tbody>
-                                </tbody>
-                            </table>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
+            
 
             <div class="row">
                 <div class="col-xl-6">

@@ -4,7 +4,7 @@ require "../inc/header.php";
 <div id="layoutSidenav_content">
     <main>
         <div class="container-fluid px-4">
-            <h1 class="mt-4" style="font-size: 30px;">Hóa Đơn chờ phê duyệt </h1>
+            <h1 class="mt-4" style="font-size: 30px;">Hóa Đơn  trong ngày  </h1>
             <ol class="breadcrumb mb-4" style="font-size: 14px; background: #f4f3f6;">
                 <li class="breadcrumb-item active">Quản Lý Hóa Đơn</li>
             </ol>
@@ -19,9 +19,9 @@ require "../inc/header.php";
                             <th>Tên khác hàng</th>
                             <th>Tên Nhân Viên</th>
                             <th>Tống Tiền</th>
-                            <th>Trạng Thái</th>
+  
                             <th>Chi Tiết</th>
-                            <th>Ngày</th>   
+                            <th>giờ</th>   
                         </tr>
                     </thead>
                     <tbody>
@@ -32,8 +32,7 @@ require "../inc/header.php";
                         <td>Trần Thị Linh</td>
 
                         <td>500000 <span>VNĐ</span></td>
-                        <td><button type="button" class="btn btn-info"  data-bs-toggle="modal"  data-bs-target="#chua">Chưa thanh Toán</button> </td>
-                        <td><button type="button" class="btn btn-info"  data-bs-toggle="modal"   data-bs-target="#add">Chi tiết</button></td>
+                    <td><button type="button" class="btn btn-info"  data-bs-toggle="modal"   data-bs-target="#add">Chi tiết</button></td>
                         <td>12/09/2021</td>
                        
                     </tr>
@@ -43,7 +42,7 @@ require "../inc/header.php";
                         <td>Nguyễn Văn Mạnh</td>
                         <td>Trần Thị Linh</td>
                         <td>500000 <span>VNĐ</span></td>
-                        <td><button type="button" class="btn btn-info"  data-bs-toggle="modal" data-bs-target="#chua">Chưa thanh Toán</button> </td>
+
                         <td><button type="button" class="btn btn-info"  data-bs-toggle="modal"   data-bs-target="#add">Chi tiết</button></td>
                         <td>12/09/2021</td>
                     </tr>
@@ -53,7 +52,7 @@ require "../inc/header.php";
                         <td>Nguyễn Văn Mạnh</td>
                         <td>Trần Thị Linh</td>
                         <td>500000 <span>VNĐ</span></td>
-                        <td><button type="button" class="btn btn-info"   data-bs-toggle="modal" data-bs-target="#chua">Chưa thanh Toán</button> </td>
+
                         <td><button type="button" class="btn btn-info"  data-bs-toggle="modal"   data-bs-target="#add">Chi tiết</button></td>
                         <td>12/09/2021</td>
                     </tr>
@@ -63,7 +62,7 @@ require "../inc/header.php";
                         <td>Nguyễn Văn Mạnh</td>
                         <td>Trần Thị Linh</td>
                         <td>500000 <span>VNĐ</span></td>
-                        <td><button type="button" class="btn btn-info"   data-bs-toggle="modal" data-bs-target="#chua">Chưa thanh Toán</button> </td>
+   
                         <td><button type="button" class="btn btn-info"  data-bs-toggle="modal"   data-bs-target="#add">Chi tiết</button></td>
                         <td>12/09/2021</td>
                     </tr>
