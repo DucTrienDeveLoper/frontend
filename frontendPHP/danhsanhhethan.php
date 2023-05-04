@@ -4,7 +4,7 @@ require "../inc/header.php";
 <div id="layoutSidenav_content">
     <main>
         <div class="container-fluid px-4">
-            <h1 class="mt-4" style="font-size: 30px;">Sản Phẩm</h1>
+            <h1 class="mt-4" style="font-size: 30px;">Sản Phẩm Hết Hạn</h1>
             <ol class="breadcrumb mb-4" style="font-size: 14px; background: #f4f3f6;">
                 <li class="breadcrumb-item active">Quản Lý Sản Phẩm</li>
             </ol>
